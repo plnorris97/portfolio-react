@@ -1,0 +1,24 @@
+Footer {
+    background-image: linear-gradient(to top, #202020 0%, #7c7b7a 100%);
+}
+
+.name {
+    text-align: left;
+}
+
+.title {
+    text-align: left;
+}
+
+.list-unstyled {
+    margin-right: 0;
+}
+
+.Footerpage {
+    color: white;
+}
+
+.FooterHeader {
+    text-align: center;
+    color: coral;
+}
