@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
     Collapse,
     Navbar,
@@ -34,16 +34,16 @@ export default class Navigation extends React.Component {
             <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                 <NavItem>
-                    <NavLink href="/components/">About Me</NavLink>
+                    <NavLink href="/about">About Me</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/components/resume">Resume</NavLink>
+                    <NavLink href="/resume">Resume</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/components/work/work.js">Work</NavLink>
+                    <NavLink href="/work">Work</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="/components/contact">Contact</NavLink>
+                    <NavLink href="/contact">Contact</NavLink>
                 </NavItem>
                 {/* <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>

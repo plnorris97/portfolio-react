@@ -1,6 +1,5 @@
 import React from "react";
 import './Footer.css';
-
 import { Col, Container, Row, Footer } from "mdbreact";
 
 class FooterPage extends React.Component {
@@ -18,16 +17,16 @@ class FooterPage extends React.Component {
             <Col md="3">
               <ul>
                 <h6 className="list-unstyled">
-                  <a href="/activities">About</a>
+                  <a href="/about">About</a>
                 </h6>
                 <h6 className="list-unstyled">
-                  <a href="/parks">Work</a>
+                  <a href="/resume">Resume</a>
                 </h6>
                 <h6 className="list-unstyled">
-                  <a href="/advanced-search">Resume</a>
+                  <a href="/work">Work</a>
                 </h6>
                 <h6 className="list-unstyled">
-                  <a href="/auth">Contact</a>
+                  <a href="/contact">Contact</a>
                 </h6>
               </ul>
             </Col>
