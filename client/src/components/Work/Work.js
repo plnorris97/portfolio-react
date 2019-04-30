@@ -1,86 +1,40 @@
-// this component will render Project Title examples.
+// this component will act as the container for portfolio card items (Portfolio.js)
 
 import React from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
+// import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 import { Container, Col, Row } from 'mdbreact';
+import Portfolio from '../Portfolio/Portfolio';
+import LazyHero from 'react-lazy-hero';
+import '../Work/Work.css';
 
+// Change this to a class component as it needs props and state - we need to map through the database of portfolio items.
 function Work() {
     return (
         <Container>
+            <LazyHero opacity={0.1} color="lightgray" minHeight="65vh" isCentered={true} imageSrc={'../../images/150x150.png'} parallaxOffset={3}>
+                <Row>
+                    <Col>
+                        <h2>Work</h2>
+                        <p>Access my featured projects and check out my code or the live application itself.</p>
+                    </Col>
+                </Row>
+            </LazyHero>
+            <Row>
+                {/* Add filter/button option to select the work you want to see (Javascript, React, PHP) */}
+            </Row>
             <Row>
                 <Col>
-                <h2>Work</h2>
-                <p>Access my featured projects and check out my code or the live application itself.</p>
+                {/* Portfolio component will render however many items are available based on the filter selection. */}
+                    <Portfolio />
                 </Col>
             </Row>
             <Row>
                 <Col>
-                    <Card>
-                        <CardBody >
-                            <CardImg src="" alt="Tricia Norris"></CardImg>
-                            <CardTitle>Project Title</CardTitle>
-                            <CardSubtitle>Technologies Used</CardSubtitle>
-                            <CardText>Ribeye excepteur chicken, pork chop velit ea enim magna prosciutto esse kielbasa shank ipsum short loin elit. Culpa shank laborum short loin. Sint veniam boudin pig excepteur fatback turkey ullamco ribeye. Occaecat shankle cillum, boudin ut venison ipsum exercitation picanha biltong ball tip ea turducken eu beef. Spare ribs deserunt velit porchetta ham hock ad eiusmod pariatur tail aute ipsum occaecat. Excepteur minim consequat commodo in nisi pork belly sunt ribeye meatloaf bacon et dolore in. Duis meatball ullamco, brisket ribeye exercitation sausage frankfurter hamburger salami cupidatat incididunt spare ribs mollit.</CardText>
-                            
-                        </CardBody>
-                    </Card>
+                    <h2>Grow your Brand</h2>
+                    <p>Some text here about how I can help you grow your brand personal or professional.</p>
                 </Col>
                 <Col>
-                    <Card>
-                        <CardBody >
-                            <CardImg src="" alt="Tricia Norris"></CardImg>
-                            <CardTitle>Project Title</CardTitle>
-                            <CardSubtitle>Technologies Used</CardSubtitle>
-                            <CardText>Ribeye excepteur chicken, pork chop velit ea enim magna prosciutto esse kielbasa shank ipsum short loin elit. Culpa shank laborum short loin. Sint veniam boudin pig excepteur fatback turkey ullamco ribeye. Occaecat shankle cillum, boudin ut venison ipsum exercitation picanha biltong ball tip ea turducken eu beef. Spare ribs deserunt velit porchetta ham hock ad eiusmod pariatur tail aute ipsum occaecat. Excepteur minim consequat commodo in nisi pork belly sunt ribeye meatloaf bacon et dolore in. Duis meatball ullamco, brisket ribeye exercitation sausage frankfurter hamburger salami cupidatat incididunt spare ribs mollit.</CardText>
-                            
-                        </CardBody>
-                    </Card>
-                </Col>
-                <Col>
-                    <Card>
-                        <CardBody >
-                            <CardImg src="" alt="Tricia Norris"></CardImg>
-                            <CardTitle>Project Title</CardTitle>
-                            <CardSubtitle>Technologies used</CardSubtitle>
-                            <CardText>Ribeye excepteur chicken, pork chop velit ea enim magna prosciutto esse kielbasa shank ipsum short loin elit. Culpa shank laborum short loin. Sint veniam boudin pig excepteur fatback turkey ullamco ribeye. Occaecat shankle cillum, boudin ut venison ipsum exercitation picanha biltong ball tip ea turducken eu beef. Spare ribs deserunt velit porchetta ham hock ad eiusmod pariatur tail aute ipsum occaecat. Excepteur minim consequat commodo in nisi pork belly sunt ribeye meatloaf bacon et dolore in. Duis meatball ullamco, brisket ribeye exercitation sausage frankfurter hamburger salami cupidatat incididunt spare ribs mollit.</CardText>
-                            
-                        </CardBody>
-                    </Card>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <Card>
-                        <CardBody >
-                            <CardImg src="" alt="Tricia Norris"></CardImg>
-                            <CardTitle>Project Title</CardTitle>
-                            <CardSubtitle>Technologies Used</CardSubtitle>
-                            <CardText>Ribeye excepteur chicken, pork chop velit ea enim magna prosciutto esse kielbasa shank ipsum short loin elit. Culpa shank laborum short loin. Sint veniam boudin pig excepteur fatback turkey ullamco ribeye. Occaecat shankle cillum, boudin ut venison ipsum exercitation picanha biltong ball tip ea turducken eu beef. Spare ribs deserunt velit porchetta ham hock ad eiusmod pariatur tail aute ipsum occaecat. Excepteur minim consequat commodo in nisi pork belly sunt ribeye meatloaf bacon et dolore in. Duis meatball ullamco, brisket ribeye exercitation sausage frankfurter hamburger salami cupidatat incididunt spare ribs mollit.</CardText>
-                            
-                        </CardBody>
-                    </Card>
-                </Col>
-                <Col>
-                    <Card>
-                        <CardBody >
-                            <CardImg src="" alt="Tricia Norris"></CardImg>
-                            <CardTitle>Project Title</CardTitle>
-                            <CardSubtitle>Technologies Used</CardSubtitle>
-                            <CardText>Ribeye excepteur chicken, pork chop velit ea enim magna prosciutto esse kielbasa shank ipsum short loin elit. Culpa shank laborum short loin. Sint veniam boudin pig excepteur fatback turkey ullamco ribeye. Occaecat shankle cillum, boudin ut venison ipsum exercitation picanha biltong ball tip ea turducken eu beef. Spare ribs deserunt velit porchetta ham hock ad eiusmod pariatur tail aute ipsum occaecat. Excepteur minim consequat commodo in nisi pork belly sunt ribeye meatloaf bacon et dolore in. Duis meatball ullamco, brisket ribeye exercitation sausage frankfurter hamburger salami cupidatat incididunt spare ribs mollit.</CardText>
-                            
-                        </CardBody>
-                    </Card>
-                </Col>
-                <Col>
-                    <Card>
-                        <CardBody >
-                            <CardImg src="" alt="Tricia Norris"></CardImg>
-                            <CardTitle>Project Title</CardTitle>
-                            <CardSubtitle>Technologies Used</CardSubtitle>
-                            <CardText>Ribeye excepteur chicken, pork chop velit ea enim magna prosciutto esse kielbasa shank ipsum short loin elit. Culpa shank laborum short loin. Sint veniam boudin pig excepteur fatback turkey ullamco ribeye. Occaecat shankle cillum, boudin ut venison ipsum exercitation picanha biltong ball tip ea turducken eu beef. Spare ribs deserunt velit porchetta ham hock ad eiusmod pariatur tail aute ipsum occaecat. Excepteur minim consequat commodo in nisi pork belly sunt ribeye meatloaf bacon et dolore in. Duis meatball ullamco, brisket ribeye exercitation sausage frankfurter hamburger salami cupidatat incididunt spare ribs mollit.</CardText>
-                            
-                        </CardBody>
-                    </Card>
+                    {/* Supportive image */}
                 </Col>
             </Row>
         </Container>

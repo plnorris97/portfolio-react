@@ -13,10 +13,18 @@ import './Resume.css';
 const Resume = () => (
   <Container>
     <Row>
+      <Col className="skills">
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      </Col>
     <Col className="work">
     <Fragment>
       <h2>Work Experience</h2>
       <Timeline>
+      <Event interval={"4/2018 – Present"} title={"Technology Apprentice"} subtitle={"Maxx Potential"}>
+        Work directly with clients to complete projects on time and within budget. Projects include quality assurance and testing, information security, web design and development, and mobile app development.
+        </Event>
         <Event interval={"7/2018 – 12/2018"} title={"Marketing Manager"} subtitle={"Talking Monkey Media"}>
         Managed client website and social media projects while coordinating with company design and development resources.
         </Event>
@@ -43,15 +51,22 @@ const Resume = () => (
       <h2>Education</h2>
       <Timeline>
           <Event interval={"7/2018 – 2/2019"} title={"Full Stack Web Developer Certificate"} subtitle={"University of Richmond"}>
-          Intensive 24-week part-time professional certificate. 
-          Technologies and frameworks covered during the program include, among others:
-          HTML5, CSS3, JavaScript, jQuery, Bootstrap, Express.js, React.js, Node.js, Database Theory, Bookshelf.js, MongoDB, MySQL, Command Line, Git, Heroku, Homebrew, MAMP
+          <ul>
+          <li>Intensive 24-week part-time professional certificate</li> 
+          <li>Technologies and frameworks covered during the program include, among others:
+          HTML5, CSS3, JavaScript, jQuery, Bootstrap, Express.js, React.js, Node.js, Database Theory, Bookshelf.js, MongoDB, MySQL, Command Line, Git, Heroku, Homebrew, MAMP</li>
+          </ul>
           </Event>
           <Event interval={"8/2012 – 5/2014"} title={"Master of Business Administration"} subtitle={"Virginia Commonwealth University"}>
           text here.
           </Event>
           <Event interval={"8/1993 – 5/1997"} title={"Bachelor of Arts"} subtitle={"Elon University"}>
-          text here.
+          <ul>
+            <li>Majors: Spanish and International Studies</li>
+            <li>Sport: Women's Cross Country | 1994-1997</li>
+            <li>Activities: Alpha Sigma Alpha social sorority (Intramural Chair, Membership Chair)</li>
+            <li>Study Abroad: Costa Rica | Winter 1994; Ecuador | Spring 1997</li>
+          </ul>
           </Event>
       </Timeline>
     </Fragment>

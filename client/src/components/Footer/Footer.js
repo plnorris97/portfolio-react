@@ -36,7 +36,7 @@ class FooterPage extends React.Component {
           <Container fluid>
             &copy; {new Date().getFullYear()} Copyright:{" "}
             <p>Tricia Norris</p>
-            {/* <a href="https://www.getoutsiderva.com"> GetOutsideRVA.com </a> */}
+            <a href="https://www.tricianorris.tech"> TriciaNorris.tech </a>
           </Container>
         </div>
       </Footer>
