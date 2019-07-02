@@ -4,10 +4,11 @@
   "description": "This project will present my portfolio in React and will utilize React's dynamic functionality.",
   "main": "server.js",
   "dependencies": {
-    "concurrently": "^4.1.0",
+    "concurrently": "^4.1.1",
     "express": "^4.16.4",
     "mdbreact": "^4.11.0",
-    "nodemon": "^1.18.10",
+    "node": "^10.16.0",
+    "nodemon": "^1.19.1",
     "react-lazy-hero": "^2.0.0",
     "react-timeline-scribble": "^1.0.14",
     "styled-components": "^4.2.0"
@@ -21,7 +22,8 @@
     "client": "cd client && npm run start",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",

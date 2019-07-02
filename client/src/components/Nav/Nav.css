@@ -13,8 +13,22 @@
 
 .navbar-nav {
     display: flex;
+    
+}
+#root > div > div:nth-child(1) > nav > div > ul > li {
+    
+    padding: 1%;
+    float: right;
+}
+#root > div > div:nth-child(1) > nav > div > ul {
+    float: right;
+    width: 50%;
+}
+nav-item {
+    float: right;
 }
 
 nav ul li {
     padding: 10px;
+
 }
