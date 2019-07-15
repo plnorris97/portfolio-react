@@ -1,24 +1,32 @@
 Footer {
-    background-image: linear-gradient(to top, #202020 0%, #7c7b7a 100%);
+    background-image: linear-gradient(to top, #202020 0%, #f77e06 100%);
 }
 
 .name {
     text-align: left;
+    font-size: 20pt;
 }
 
 .title {
     text-align: left;
+    font-size: 16pt;
 }
 
 .list-unstyled {
-    margin-right: 0;
+    margin-right: 0px;
+    text-align: right;
+    font-size: 14pt;
+    
 }
 
+a {
+    color: white;
+}
 .Footerpage {
     color: white;
 }
 
 .FooterHeader {
     text-align: center;
-    color: coral;
+    /* color: coral; */
 }

@@ -1,0 +1,32 @@
+#article {
+    margin-left: 20px;
+    margin-right: 80px;
+}
+#image {
+    display: inline-block;
+    position: absolute;
+    background-color: gray;
+    width: 150px;
+    height: 150px;
+}
+
+#title {
+    float: right;
+    /* display: block; */
+    /* position: relative; */
+    
+}
+
+
+#subtitle {
+
+}
+
+#text {
+
+}
+
+#more {
+    margin-left: -10px;
+    padding: 2px;
+}

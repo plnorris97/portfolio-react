@@ -3,16 +3,19 @@
 
 
 import React from 'react';
-import { Card, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
+import { Card, CardText, CardBody, CardTitle, CardImg, CardSubtitle, CardHeader } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './About.css';
 
 function About() {
   return (
+    
     <Card>
       <CardBody >
-        {/* <CardImg src="../../images/150x150.png" alt="Tricia Norris"></CardImg> */}
+        <CardImg src="../../images/150x150.png" alt="Tricia Norris"></CardImg>
         <CardTitle>About</CardTitle>
-        <CardSubtitle>From Marketer to Developer - My Career Change Story</CardSubtitle>
+        <CardHeader>From Marketer to Developer</CardHeader>
+        <CardSubtitle>With an extensive background in marketing, I bring the user experience to the forefront. I am relentless in creatively solving complex client problems and I stay committed to finding not just <em>a</em> solution, but <em>the</em> solution.</CardSubtitle>
         <CardText>For nearly 20 years, I provided marketing support for sales and product development teams in the financial and insurance industries for large Fortune 200 and 500 companies. As a member of these fast-paced teams, I managed all marketing aspects of my clients’ projects – from the strategic to the tactical.
           <br />
           This experience afforded me the ability to manage the redesign, development and deployment of two B2B websites. During this time, I learned many aspects of front end and back end development alongside IT consultants and internal teams.

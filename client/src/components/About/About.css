@@ -1,0 +1,18 @@
+.card {
+    margin: 0 0 1rem 0
+}
+
+.card-body {
+    margin: 60px 100px 60px 100px;
+}
+
+/* .card-title {
+    font-size: 18pt;
+    padding: 10px;
+    margin: 10px;
+    background: #f77e06;
+} */
+
+.card-subtitle {
+    font-size: 14pt;
+}

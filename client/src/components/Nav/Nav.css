@@ -11,6 +11,11 @@
     size: 100%;
 }
 
+.navbar-brand {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 2.25rem
+}
 .navbar-nav {
     display: flex;
     
@@ -22,7 +27,7 @@
 }
 #root > div > div:nth-child(1) > nav > div > ul {
     float: right;
-    width: 50%;
+    width: 30%;
 }
 nav-item {
     float: right;
