@@ -1,5 +1,6 @@
 const express = require("express");
 // const routes = require("./routes");
+const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
@@ -13,6 +14,11 @@ if (process.env.NODE_ENV === "production") {
 
 // Define API routes here
 // app.use(routes);
+
+mongoose
+    .connect(process.env.MONGODB_URI || "mongodb://localhost/project-work")
+    .then(() => console.log('MongoDB Connected...'))
+    .catch(err => console.log(err));
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);

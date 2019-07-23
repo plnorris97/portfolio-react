@@ -7,6 +7,14 @@ const workSchema = new Schema({
         type: String,
         required: true
     },
+    description: {
+        type: String,
+        required: true
+    },
+    image: {
+        type: String,
+        required: true
+    },
     tech: {
         type: String,
         required: true
@@ -14,21 +22,13 @@ const workSchema = new Schema({
     category: {
         type: String,
         required: true
-    }
-    description: {
-        type: String.
-        required: true
     },
-    image: {
+    appLink: {
         type: String,
         required: true
     },
-    appLink: {
-        type: String
-        required: true
-    },
     codeLink: {
-        type: String
+        type: String,
         required: true
     }
 });

@@ -1,6 +1,6 @@
 import React from "react";
 import './Social.css';
-import { FaFacebookSquare, FaGithubSquare, FaLinkedin, FaInstagram } from 'react-icons/fa';
+// import { FaFacebookSquare, FaGithubSquare, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { Col, Row } from "mdbreact";
 
 class SocialWidget extends React.Component {
@@ -8,13 +8,13 @@ class SocialWidget extends React.Component {
       return (
           <Row>
             <Col>
-                <ul>
+                {/* <ul>
                     <div id="icon"><FaGithubSquare /></div>
                         <i href="https://github.com/plnorris97" src="../../images/004-github.png"></i>
                     <div id="icon"><FaLinkedin /></div>
                     <div id="icon"><FaFacebookSquare /></div>
                     <div id="icon"><FaInstagram /></div>
-                </ul>
+                </ul> */}
             </Col>
           </Row>
       );

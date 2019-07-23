@@ -1,4 +1,4 @@
     
 module.exports ={
-    Book: require("./works.js")
+    Work: require("./works.js")
   }
